@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js IMDB Movie Information Project
+
+This is a Next.js project I worked on, which is linked with IMDB to fetch movie information.
+
+## Features
+
+- **Caching**: Used caching in the functions responsible for fetching data from the database. This ensures that if one person searches for specific data and another person searches for the same data, it will be displayed immediately. This is great for static data, but if the data changes quickly, this method might not be suitable as you want to display fresh data, not outdated data from the server.
+- **Shadecn Library**: The shadecn library was used, which is very easy to work with. It supports Zod validation, which was utilized for search functionality. When you use it, it comes with the Lucide library, which is great for icons. This combination was also used to create a loading screen while fetching data from the database.
+- **Embla Carousel**: This library was used to create a scroll banner for the movies.
+- **Clean and Organized Code**: Efforts were made to ensure the project is clean and organized.
+
+## Technologies Used
+
+- **Next.js**
+- **React.js**
+- **Node.js**
+- **Shadecn Library**
+- **Zod Validation**
+- **Lucide Icons**
+- **Embla Carousel**
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js and npm installed
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/yourusername/yourrepo.git
