@@ -2,19 +2,24 @@ import MoviesCarousel from '@/components/MoviesCarousel';
 import { getDescoverMovies } from '@/lib/getMovies';
 import React from 'react';
 
-type Props = {
-  params: {
-    id: string;
-  };
-  searchParams: {
-    genre: string;
-  };
+type Params = {
+  id: string;
 };
 
-export default async function GenrePage({ params, searchParams }: Props): Promise<JSX.Element> {
+type SearchParams = {
+  genre: string;
+};
+
+interface PageProps {
+  params: Params;
+  searchParams: SearchParams;
+}
+
+export default async function GenrePage({ params, searchParams }: PageProps): Promise<JSX.Element> {
   const { id } = params;
   const { genre } = searchParams;
 
+  // Fetch the movies based on the id
   const movies = await getDescoverMovies(id);
 
   return (
