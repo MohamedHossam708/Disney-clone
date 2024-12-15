@@ -2,7 +2,6 @@ import { Movie } from '@/Types'
 import React from 'react'
 import Image from 'next/image';
 import getImagePath from '@/lib/getImagePath';
-import { Genre } from '../Types';
 
 type Genre={
   id:number,
