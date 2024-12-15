@@ -15,7 +15,7 @@ interface PageProps {
   searchParams: SearchParams;
 }
 
-export default async function GenrePage({ params, searchParams }: PageProps): Promise<JSX.Element> {
+export default async function GenrePage({ params, searchParams }: any): Promise<JSX.Element> {
   const { id } = params;
   const { genre } = searchParams;
 
