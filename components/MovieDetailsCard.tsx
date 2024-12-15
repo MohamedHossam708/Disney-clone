@@ -3,7 +3,10 @@ import React from 'react'
 import Image from 'next/image';
 import getImagePath from '@/lib/getImagePath';
 
-
+type Genre={
+  id:number,
+  name:string
+}
 
 export default async function MovieDetailsCard({movie}:{movie:any}) {
 
